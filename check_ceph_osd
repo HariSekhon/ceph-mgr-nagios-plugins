@@ -35,7 +35,7 @@ logging.basicConfig(level=logging.INFO)
 def main():
 
   # parse args
-  parser = argparse.ArgumentParser(description="ceph monitors nagios plugin.")
+  parser = argparse.ArgumentParser(description="ceph osd nagios plugin.")
   parser.add_argument('-a','--address', help='mgr address to use for queries')
   parser.add_argument('-p','--port', help='mgr port to use for queries', default=8003)
   parser.add_argument('-V','--version', help='show version and exit', action='store_true')
