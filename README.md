@@ -4,6 +4,7 @@ Inspiration comes from [ceph-nagios-plugins](https://github.com/ceph/ceph-nagios
 
 ## Setup
 You need to enable restful mgr module and create key for monitoring user.
+For more information see http://docs.ceph.com/docs/master/mgr/restful/.
 
     # ceph mgr module enable restful
     # ceph restful create-key nagios
@@ -19,7 +20,7 @@ Example:
 
     # ./check_ceph_mon -a mgr1 -u nagios -w <nagios-key> -I mon1
 
-## ./check_ceph_osd
+## check_ceph_osd
 If no osd id (-I) is specified, all osds are checked by default.
 Default user (-u) is nagios.
 
